@@ -1,1 +1,10 @@
 .vercel
+node_modules/
+.next/
+dist/
+build/
+.env
+
+.manus-logs/
+node_modules/.vite/
+.DS_Store

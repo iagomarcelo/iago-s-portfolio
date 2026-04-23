@@ -9,11 +9,18 @@ export function Experience() {
   const experiences = [
     {
       icon: Briefcase,
+      title: t.experience.greenfive.title,
+      company: t.experience.greenfive.company,
+      period: t.experience.greenfive.period,
+      description: t.experience.greenfive.description,
+      current: true,
+    },
+    {
+      icon: Briefcase,
       title: t.experience.cogna.title,
       company: t.experience.cogna.company,
       period: t.experience.cogna.period,
       description: t.experience.cogna.description,
-      current: true,
     },
     {
       icon: Briefcase,
@@ -68,7 +75,7 @@ export function Experience() {
                       </div>
 
                       {/* Content */}
-                      <div className="pb-6 pt-2">
+                      <div className="pb-6 pt-2 flex-1">
                         <div className="flex items-start justify-between mb-2">
                           <div>
                             <h4 className="text-xl font-bold text-foreground">
@@ -87,7 +94,7 @@ export function Experience() {
                         <p className="text-sm text-muted-foreground mb-3">
                           {exp.period}
                         </p>
-                        <p className="text-sm text-foreground leading-relaxed">
+                        <p className="text-sm text-foreground leading-relaxed whitespace-pre-wrap">
                           {exp.description}
                         </p>
                       </div>
